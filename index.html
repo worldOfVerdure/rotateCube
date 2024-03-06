@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rotating Cube</title>
+  <link rel="icon" href="images/favicon/favicon.jpg"/>
+  <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+  <div id="entireContainer">
+    <div id="cube">
+      <div id="facetOne" class="facet">1</div>
+      <div id="facetTwo" class="facet">2</div>
+      <div id="facetThree" class="facet">3</div>
+      <div id="facetFour" class="facet">4</div>
+      <div id="facetFive" class="facet">5</div>
+      <div id="facetSix" class="facet">6</div>
+    </div>
+    <div id="sliders">
+      <div id="xAxisContainer" class="sliderLabel">
+        <label for="xAxis">Rotate on x-Axis:</label>
+        <div class="rangeNValue">
+          <input type="range" id="xAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <p>Value: <output id="xAxisValue"></output></p>
+        </div>
+      </div>
+      <div id="persContainer" class="sliderLabel">
+        <label for="persSlider">Perspective:</label>
+        <div class="rangeNValue">
+          <input type="range" id="persSlider" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <p>Value: <output id="persValue"></output></p>
+        </div>
+      </div>
+      <div id="yAxisContainer" class="sliderLabel">
+        <label for="yAxis">Rotate on y-Axis:</label>
+        <div class="rangeNValue">
+          <input type="range" id="yAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <p>Value: <output id="yAxisValue"></output></p>
+        </div>
+      </div>  
+      <div id="persOriContainer" class="sliderLabel">
+        <label for="persOriSlider">Perspective Origin:</label>
+        <div class="rangeNValue">
+          <input type="range" id="persOriSlider" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <p>Value: <output id="persOriValue"></output></p>
+        </div>
+      </div>
+      <div id="zAxisContainer" class="sliderLabel">
+        <label for="zAxis">Rotate on z-Axis:</label>
+        <div class="rangeNValue">
+          <input type="range" id="zAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <p>Value: <output id="zAxisValue"></output></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>
