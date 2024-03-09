@@ -103,6 +103,16 @@ div[class="sliderLabel"] {
   gap: 2rem;
 }
 
+input[type="range"] {
+  margin: 0;
+}
+
+/* div[class="rangeNValue"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+} */
+
 div[id="xAxisContainer"] {
   order: 0;
 }
@@ -137,7 +147,7 @@ label {
 }
 
 label:last-child {
-  margin-right: 0rem;
+  margin-right: 0;
 }
 
 .radioBtn {
