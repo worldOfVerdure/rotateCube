@@ -9,50 +9,66 @@
 </head>
 <body>
   <div id="entireContainer">
-    <div id="cube">
-      <div id="facetOne" class="facet">1</div>
-      <div id="facetTwo" class="facet">2</div>
-      <div id="facetThree" class="facet">3</div>
-      <div id="facetFour" class="facet">4</div>
-      <div id="facetFive" class="facet">5</div>
-      <div id="facetSix" class="facet">6</div>
+    <div id="scene">
+      <div id="cube">
+        <div id="facetOne" class="facet">Front</div>
+        <div id="facetTwo" class="facet">Right</div>
+        <div id="facetThree" class="facet">Back</div>
+        <div id="facetFour" class="facet">Left</div>
+        <div id="facetFive" class="facet">Top</div>
+        <div id="facetSix" class="facet">Bottom</div>
+      </div>
     </div>
     <div id="sliders">
       <div id="xAxisContainer" class="sliderLabel">
         <label for="xAxis">Rotate on x-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="xAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <input type="range" id="xAxis" class="slider" min="-360" max="360" step="any"/>
           <p>Value: <output id="xAxisValue"></output></p>
         </div>
       </div>
       <div id="persContainer" class="sliderLabel">
         <label for="persSlider">Perspective:</label>
         <div class="rangeNValue">
-          <input type="range" id="persSlider" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <input type="range" id="persSlider" class="slider" min="-360" max="360" step="any"/>
           <p>Value: <output id="persValue"></output></p>
         </div>
       </div>
       <div id="yAxisContainer" class="sliderLabel">
         <label for="yAxis">Rotate on y-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="yAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <input type="range" id="yAxis" class="slider" min="-360" max="360" step="any"/>
           <p>Value: <output id="yAxisValue"></output></p>
         </div>
       </div>  
       <div id="persOriContainer" class="sliderLabel">
         <label for="persOriSlider">Perspective Origin:</label>
         <div class="rangeNValue">
-          <input type="range" id="persOriSlider" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <input type="range" id="persOriSlider" class="slider" min="-360" max="360" step="any"/>
           <p>Value: <output id="persOriValue"></output></p>
         </div>
       </div>
       <div id="zAxisContainer" class="sliderLabel">
         <label for="zAxis">Rotate on z-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="zAxis" class="slider" min="-6.2832" max="6.2832" step="any"/>
+          <input type="range" id="zAxis" class="slider" min="-360" max="360" step="any"/>
           <p>Value: <output id="zAxisValue"></output></p>
         </div>
       </div>
+    </div>
+    <div class="radioBtn">
+      <input type="radio" id="front" value="front" name="rotateCube"/>
+      <label for="front">Front</label>
+      <input type="radio" id="right" value="right" name="rotateCube"/>
+      <label for="right">Right</label>
+      <input type="radio" id="back" value="back" name="rotateCube"/>
+      <label for="back">Back</label>
+      <input type="radio" id="left" value="left" name="rotateCube"/>
+      <label for="left">Left</label>
+      <input type="radio" id="top" value="top" name="rotateCube"/>
+      <label for="top">Top</label>
+      <input type="radio" id="bottom" value="bottom" name="rotateCube"/>
+      <label for="bottom">Bottom</label>
     </div>
   </div>
   <script src="js/index.js"></script>
