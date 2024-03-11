@@ -23,36 +23,43 @@
       <div id="xAxisContainer" class="sliderLabel">
         <label for="xAxis">Rotate on x-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="xAxis" class="slider" min="-360" max="360" step="any"/>
-          <p>Value: <output id="xAxisValue"></output></p>
+          <input type="range" id="xAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+          <p>Value: <output for="xAxis">0°</output></p>
         </div>
       </div>
       <div id="persContainer" class="sliderLabel">
         <label for="persSlider">Perspective:</label>
         <div class="rangeNValue">
-          <input type="range" id="persSlider" class="slider" min="-360" max="360" step="any"/>
-          <p>Value: <output id="persValue"></output></p>
+          <input type="range" id="persSlider" class="slider" value="750" min="0" max="1500" step="any"/>
+          <p>Value: <output for="persSlider">750px</output></p>
         </div>
       </div>
       <div id="yAxisContainer" class="sliderLabel">
         <label for="yAxis">Rotate on y-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="yAxis" class="slider" min="-360" max="360" step="any"/>
-          <p>Value: <output id="yAxisValue"></output></p>
+          <input type="range" id="yAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+          <p>Value: <output for="yAxis">0°</output></p>
         </div>
       </div>  
-      <div id="persOriContainer" class="sliderLabel">
-        <label for="persOriSlider">Perspective Origin:</label>
+      <div id="persOriContainerX" class="sliderLabel">
+        <label for="persOriSliderX">Perspective Origin X:</label>
         <div class="rangeNValue">
-          <input type="range" id="persOriSlider" class="slider" min="-360" max="360" step="any"/>
-          <p>Value: <output id="persOriValue"></output></p>
+          <input type="range" id="persOriSliderX" class="slider" min="-500" max="500" step="any"/>
+          <p>Value: <output for="persOriSliderX">50%</output></p>
+        </div>
+      </div>
+      <div id="persOriContainerY" class="sliderLabel">
+        <label for="persOriSliderY">Perspective Origin Y:</label>
+        <div class="rangeNValue">
+          <input type="range" id="persOriSliderY" class="slider" min="-500" max="500" step="any"/>
+          <p>Value: <output for="persOriValueY">50%</output></p>
         </div>
       </div>
       <div id="zAxisContainer" class="sliderLabel">
         <label for="zAxis">Rotate on z-Axis:</label>
         <div class="rangeNValue">
-          <input type="range" id="zAxis" class="slider" min="-360" max="360" step="any"/>
-          <p>Value: <output id="zAxisValue"></output></p>
+          <input type="range" id="zAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+          <p>Value: <output id="zAxisValue">0°</output></p>
         </div>
       </div>
     </div>
@@ -70,7 +77,13 @@
       <input type="radio" id="bottom" value="bottom" name="rotateCube"/>
       <label for="bottom">Bottom</label>
     </div>
+    <div class="checkboxBtn">
+      <input type="checkbox" id="rotateCube"/>
+      <label for="rotateCube">Rotate</label>
+      <input type="checkbox" id="opacity"/>
+      <label for="opacity">Opaqueness</label> 
+    </div>
   </div>
-  <script src="js/index.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 </html>
