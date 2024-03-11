@@ -16,7 +16,7 @@ export function radioRotate (event, CubeEle, cubeData) {
       cubeData[2] = 0;
       break;
     case "right":
-      CubeEle.style.transform = `rotate3d(0, 1, 0, -90deg)`;
+      CubeEle.style.transform = `rotate3d(0, 1, 0, -90.1deg)`;
       Outputs[0].innerText = "0°";
       Outputs[2].innerText = "-90.1°";
       Outputs[5].innerText = "0°";
