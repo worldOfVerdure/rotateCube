@@ -51,34 +51,34 @@ div[class="facet"] {
 }
 
 #facetOne {
-  transform: translateZ(75px);
+  transform: translateZ(50px);
   background-color: rgba(137, 207, 240, .5);
 }
 
 #facetTwo {
-  transform: rotateY(90deg) translateZ(75px);
+  transform: rotateY(90deg) translateZ(50px);
   background-color: rgba(52, 233, 16, .3);
 }
 
 #facetThree {
-  transform: rotateY(180deg) translateZ(75px);
+  transform: rotateY(180deg) translateZ(50px);
   background-color: rgba(255, 0, 0, .3);
 }
 
 #facetFour {
-  transform: rotateY(-90deg) translateZ(75px);
+  transform: rotateY(-90deg) translateZ(50px);
   background-color: rgba(255, 217, 0, .3);
   opacity: 1;
 }
 
 #facetFive {
-  transform: rotateX(90deg) translateZ(75px);
+  transform: rotateX(90deg) translateZ(50px);
   background-color: rgba(225, 0, 255, .3);
   opacity: 1;
 }
 
 #facetSix {
-  transform: rotateX(-90deg) translateZ(75px);
+  transform: rotateX(-90deg) translateZ(50px);
   background-color: rgba(10, 47, 148, 0.3);
 }
 
