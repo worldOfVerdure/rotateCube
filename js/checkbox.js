@@ -33,7 +33,6 @@ function changeOpacity(facets, checkedStatus) {
 }
 
 export function checkboxRotate(event, CubeEle, cubeFacets, RangeItems) {
-  debugger;
   switch (event.target.id) {
     case "rotateCube":
       rotateCubeFunc(CubeEle, event.target.checked, RangeItems);
