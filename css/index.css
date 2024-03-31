@@ -23,7 +23,7 @@ div[id="scene"] {
   margin: 7rem 7rem 9rem 7rem;
 }
 
-@keyframes sliderRotateKeyF {
+@keyframes rotate {
   from { transform: rotate3d(0, 0, 0, 0); }
   to { transform: rotate3d(.3, .3, .3, 360deg); }
 }
@@ -34,7 +34,7 @@ div[id="cube"] {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0s;
-  animation: sliderRotateKeyF 0s linear infinite;
+  animation: rotate 0s linear infinite;
 }
 
 div[class="facet"] {
@@ -48,6 +48,7 @@ div[class="facet"] {
   justify-content: center;
   position: absolute;
   color: #fff;
+  backface-visibility: hidden;
 }
 
 #facetOne {
