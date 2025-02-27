@@ -2,14 +2,14 @@ function rotateCubeFunc(CubeEle, checkedStatus, RangeItems) {
   if (checkedStatus) {
     CubeEle.style.animation = "rotate 8s linear infinite";
     RangeItems[0].disabled = "disabled";
+    RangeItems[1].disabled = "disabled";
     RangeItems[2].disabled = "disabled";
-    RangeItems[5].disabled = "disabled";
   }
   else {
     CubeEle.style.animation = "rotate 0s linear infinite";
     RangeItems[0].removeAttribute("disabled");
+    RangeItems[1].removeAttribute("disabled");
     RangeItems[2].removeAttribute("disabled");
-    RangeItems[5].removeAttribute("disabled");
   }
 }
 
