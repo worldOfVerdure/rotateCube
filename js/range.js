@@ -1,9 +1,6 @@
-export function rangeRotate(event, SceneEle, CubeEle, cubeData, RadioItems) {
-  const RADIO_NUM = 6;
-  for (let i = 0; i < RADIO_NUM; ++i)
-    RadioItems[i].checked = false;
-  
+export function rangeRotate(event, SceneEle, CubeEle, cubeData) {
   const truncatedValue = Math.round(100 * event.target.value) / 100;
+  
   switch (event.target.id) {
     case "xAxis":
       cubeData[0] = truncatedValue;

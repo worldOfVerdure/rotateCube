@@ -1,89 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rotating Cube</title>
-  <link rel="icon" href="images/favicon/favicon.jpg"/>
-  <link rel="stylesheet" href="css/index.css"/>
-</head>
-<body>
-  <div id="entireContainer">
-    <div id="scene">
-      <div id="cube">
-        <div id="facetOne" class="facet">Front</div>
-        <div id="facetTwo" class="facet">Right</div>
-        <div id="facetThree" class="facet">Back</div>
-        <div id="facetFour" class="facet">Left</div>
-        <div id="facetFive" class="facet">Top</div>
-        <div id="facetSix" class="facet">Bottom</div>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Rotating Cube</title>
+    <link rel="icon" href="images/favicon/favicon.jpg"/>
+    <link rel="stylesheet" href="css/index.css"/>
+  </head>
+  <body>
+    <div id="entireContainer">
+      <div id="scene">
+        <div id="cube">
+          <div id="facetFront" class="facet">Front</div>
+          <div id="facetLeft" class="facet">Left</div>
+          <div id="facetBack" class="facet">Back</div>
+          <div id="facetRight" class="facet">Right</div>
+          <div id="facetTop" class="facet">Top</div>
+          <div id="facetBottom" class="facet">Bottom</div>
+        </div>
       </div>
+      <form id="sliders">
+        <div id="xAxisContainer" class="sliderLabel">
+          <label for="xAxis">Rotate on x-Axis:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="xAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+            <p>Value: <output for="xAxis">0°</output></p>
+          </div>
+        </div>
+        <div id="yAxisContainer" class="sliderLabel">
+          <label for="yAxis">Rotate on y-Axis:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="yAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+            <p>Value: <output for="yAxis">0°</output></p>
+          </div>
+        </div>
+        <div id="zAxisContainer" class="sliderLabel">
+          <label for="zAxis">Rotate on z-Axis:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="zAxis" class="slider" value="0" min="-360" max="360" step="any"/>
+            <p>Value: <output id="zAxisValue">0°</output></p>
+          </div>
+        </div>
+        <div id="persContainer" class="sliderLabel">
+          <label for="persSlider">Perspective:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="persSlider" class="slider" value="750" min="500" max="1500" step="any"/>
+            <p>Value: <output for="persSlider">750px</output></p>
+          </div>
+        </div>
+        <div id="persOriContainerX" class="sliderLabel">
+          <label for="persOriSliderX">Perspective Origin X:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="persOriSliderX" class="slider" min="-500" max="500" step="any"/>
+            <p>Value: <output for="persOriSliderX">50%</output></p>
+          </div>
+        </div>
+        <div id="persOriContainerY" class="sliderLabel">
+          <label for="persOriSliderY">Perspective Origin Y:</label>
+          <div class="rangeNValue">
+            <input autocomplete="off" type="range" id="persOriSliderY" class="slider" min="-500" max="500" step="any"/>
+            <p>Value: <output for="persOriValueY">50%</output></p>
+          </div>
+        </div>
+      </form>
+      <form class="radioBtn">
+        <input autocomplete="off" type="radio" id="radioFront" value="front" name="rotateFace"/>
+        <label for="radioFront">Front</label>
+        <input autocomplete="off" type="radio" id="radioLeft" value="left" name="rotateFace"/>
+        <label for="radioLeft">Left</label>
+        <input autocomplete="off" type="radio" id="radioBack" value="back" name="rotateFace"/>
+        <label for="radioBack">Back</label>
+        <input autocomplete="off" type="radio" id="radioRight" value="right" name="rotateFace"/>
+        <label for="radioRight">Right</label>
+        <input autocomplete="off" type="radio" id="radioTop" value="top" name="rotateFace"/>
+        <label for="radioTop">Top</label>
+        <input autocomplete="off" type="radio" id="radioBottom" value="bottom" name="rotateFace"/>
+        <label for="radioBottom">Bottom</label>
+      </form>
+      <form class="checkboxBtn">
+        <input autocomplete="off" type="checkbox" id="rotateCube"/>
+        <label for="rotateCube">Rotate</label>
+        <input autocomplete="off" type="checkbox" id="opacity"/>
+        <label for="opacity">Opaqueness</label> 
+      </form>
     </div>
-    <div id="sliders">
-      <div id="xAxisContainer" class="sliderLabel">
-        <label for="xAxis">Rotate on x-Axis:</label>
-        <div class="rangeNValue">
-          <input type="range" id="xAxis" class="slider" value="0" min="-360" max="360" step="any"/>
-          <p>Value: <output for="xAxis">0°</output></p>
-        </div>
-      </div>
-      <div id="persContainer" class="sliderLabel">
-        <label for="persSlider">Perspective:</label>
-        <div class="rangeNValue">
-          <input type="range" id="persSlider" class="slider" value="750" min="0" max="1500" step="any"/>
-          <p>Value: <output for="persSlider">750px</output></p>
-        </div>
-      </div>
-      <div id="yAxisContainer" class="sliderLabel">
-        <label for="yAxis">Rotate on y-Axis:</label>
-        <div class="rangeNValue">
-          <input type="range" id="yAxis" class="slider" value="0" min="-360" max="360" step="any"/>
-          <p>Value: <output for="yAxis">0°</output></p>
-        </div>
-      </div>  
-      <div id="persOriContainerX" class="sliderLabel">
-        <label for="persOriSliderX">Perspective Origin X:</label>
-        <div class="rangeNValue">
-          <input type="range" id="persOriSliderX" class="slider" min="-500" max="500" step="any"/>
-          <p>Value: <output for="persOriSliderX">50%</output></p>
-        </div>
-      </div>
-      <div id="persOriContainerY" class="sliderLabel">
-        <label for="persOriSliderY">Perspective Origin Y:</label>
-        <div class="rangeNValue">
-          <input type="range" id="persOriSliderY" class="slider" min="-500" max="500" step="any"/>
-          <p>Value: <output for="persOriValueY">50%</output></p>
-        </div>
-      </div>
-      <div id="zAxisContainer" class="sliderLabel">
-        <label for="zAxis">Rotate on z-Axis:</label>
-        <div class="rangeNValue">
-          <input type="range" id="zAxis" class="slider" value="0" min="-360" max="360" step="any"/>
-          <p>Value: <output id="zAxisValue">0°</output></p>
-        </div>
-      </div>
-    </div>
-    <div class="radioBtn">
-      <input type="radio" id="front" value="front" name="rotateCube"/>
-      <label for="front">Front</label>
-      <input type="radio" id="right" value="right" name="rotateCube"/>
-      <label for="right">Right</label>
-      <input type="radio" id="back" value="back" name="rotateCube"/>
-      <label for="back">Back</label>
-      <input type="radio" id="left" value="left" name="rotateCube"/>
-      <label for="left">Left</label>
-      <input type="radio" id="top" value="top" name="rotateCube"/>
-      <label for="top">Top</label>
-      <input type="radio" id="bottom" value="bottom" name="rotateCube"/>
-      <label for="bottom">Bottom</label>
-    </div>
-    <div class="checkboxBtn">
-      <input type="checkbox" id="rotateCube"/>
-      <label for="rotateCube">Rotate</label>
-      <input type="checkbox" id="opacity"/>
-      <label for="opacity">Opaqueness</label> 
-    </div>
-  </div>
-  <script type="module" src="js/index.js"></script>
-</body>
+    <script type="module" src="js/index.js"></script>
+  </body>
 </html>

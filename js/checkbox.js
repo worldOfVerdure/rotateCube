@@ -1,12 +1,12 @@
 function rotateCubeFunc(CubeEle, checkedStatus, RangeItems) {
   if (checkedStatus) {
-    CubeEle.style.animation = "sliderRotateKeyF 8s linear infinite";
+    CubeEle.style.animation = "rotate 8s linear infinite";
     RangeItems[0].disabled = "disabled";
     RangeItems[2].disabled = "disabled";
     RangeItems[5].disabled = "disabled";
   }
   else {
-    CubeEle.style.animation = "sliderRotateKeyF 0s linear infinite";
+    CubeEle.style.animation = "rotate 0s linear infinite";
     RangeItems[0].removeAttribute("disabled");
     RangeItems[2].removeAttribute("disabled");
     RangeItems[5].removeAttribute("disabled");
@@ -40,7 +40,7 @@ export function checkboxRotate(event, CubeEle, cubeFacets, RangeItems) {
     case "opacity":
       changeOpacity(cubeFacets, event.target.checked);
       break;
-    default :
+    default:
       console.log("Invalid checkbox ID passed.");
   }
 }
