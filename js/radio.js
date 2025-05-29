@@ -2,7 +2,7 @@ export function radioRotate (event, CubeEle, cubeData) {
     const Outputs = document.querySelectorAll("output");
     const RangeValues = document.querySelectorAll("input[type=\"range\"]");
     CubeEle.style.transition = "transform 4s";
-    console.log(event.target.value);
+    
     switch(event.target.value) {
     case "front":
       CubeEle.style.transform = `rotate3d(0, 0, 0, 0deg)`;
